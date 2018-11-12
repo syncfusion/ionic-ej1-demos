@@ -9,7 +9,7 @@ The following sections will guide you through using the Syncfusion Essential JS 
 * [License](#license)
 * [Using the samples](#using-the-samples)
 * [Online examples](#online-examples)
-* [Controls Catalog](#controls catalog)
+* [Controls Catalog](#controls-catalog)
 * [Support and Feedback](#support-and-feedback)
 
 ## Requirements to run the examples
