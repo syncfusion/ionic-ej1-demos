@@ -1,0 +1,13 @@
+<header-title title="Barcode"></header-title>
+<ion-content padding>
+    <div class="barcodeSample" style="padding-left:100px">
+        <div>
+            <ej-barcode #barcode style="display:block" text="012345678" id="barcode">
+            </ej-barcode>
+        </div><br/><br/>
+        <div>
+            Select Barcode type<br/><br/><br/>
+            <input ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [popupHeight]="330" text="QRBarcode" (select)="onSelect($event)" />
+        </div>
+    </div>
+</ion-content>
