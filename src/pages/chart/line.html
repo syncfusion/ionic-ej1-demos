@@ -1,0 +1,11 @@
+<header-title title="Chart  /  Line"></header-title>
+<ion-content>
+    <ej-chart  id="line_Ionic" style="display:block;" [isResponsive]="true" [legend.visible]="true" (load)="onchartload($event)" [primaryXAxis]="primaryX" [primaryYAxis]="primaryY" [commonSeriesOptions]="commonSeries" [title]="title">
+        <e-seriescollection>
+            <e-series name="India" [dataSource]="EfficiencyList" xName="Year" yName="yName"></e-series>
+            <e-series name="Germany" [dataSource]="EfficiencyList" xName="Year" yName="yName1"></e-series>
+            <e-series name="England" [dataSource]="EfficiencyList" xName="Year" yName="yName2"></e-series>
+            <e-series name="France" [dataSource]="EfficiencyList" xName="Year" yName="yName3"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
