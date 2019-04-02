@@ -7,7 +7,7 @@ The following sections will guide you through using the Syncfusion Essential JS 
 * [Requirements to run the examples](#requirements-to-run-the-examples)
 * [Repository Structure](#repository-structure)
 * [License](#license)
-* [Using the samples](#using-the-samples)
+* [Using the samples](#using-the-samples) 
 * [Online examples](#online-examples)
 * [Controls Catalog](#controls-catalog)
 * [Support and Feedback](#support-and-feedback)
