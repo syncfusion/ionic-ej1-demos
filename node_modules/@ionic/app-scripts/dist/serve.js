@@ -17,21 +17,10 @@ var DEV_SERVER_DEFAULT_HOST = '0.0.0.0';
 function serve(context) {
     helpers_1.setContext(context);
     var config;
-    var httpServer;
     var host = getHttpServerHost(context);
     var notificationPort = getNotificationPort(context);
     var liveReloadServerPort = getLiveReloadServerPort(context);
     var hostPort = getHttpServerPort(context);
-    function finish() {
-        if (config) {
-            if (httpServer) {
-                httpServer.listen(config.httpPort, config.host, function () {
-                    logger_1.Logger.debug("listening on " + config.httpPort);
-                });
-            }
-            onReady(config, context);
-        }
-    }
     return network_1.findClosestOpenPorts(host, [notificationPort, liveReloadServerPort, hostPort])
         .then(function (_a) {
         var notificationPortFound = _a[0], liveReloadServerPortFound = _a[1], hostPortFound = _a[2];
@@ -57,11 +46,11 @@ function serve(context) {
         };
         notification_server_1.createNotificationServer(config);
         live_reload_1.createLiveReloadServer(config);
-        httpServer = http_server_1.createHttpServer(config);
+        http_server_1.createHttpServer(config);
         return watch_1.watch(context);
     })
         .then(function () {
-        finish();
+        onReady(config, context);
         return config;
     }, function (err) {
         throw err;
@@ -71,14 +60,14 @@ function serve(context) {
             throw err;
         }
         else {
-            finish();
+            onReady(config, context);
             return config;
         }
     });
 }
 exports.serve = serve;
 function onReady(config, context) {
-    if (config.launchBrowser) {
+    if (config.launchBrowser || config.launchLab) {
         var openOptions = [config.hostBaseUrl]
             .concat(launchLab(context) ? [serve_config_1.IONIC_LAB_URL] : [])
             .concat(browserOption(context) ? [browserOption(context)] : [])

@@ -1,0 +1,33 @@
+<header-title title="Schedule  /  Block Intervals"></header-title>
+<ion-content>
+    <ej-schedule width="100%"
+                 height="530px"
+                 currentView="day"
+                 isResponsive="true"
+                 [currentDate]=currentdate
+                 (create)="onCustomization($event)"
+                 (actionComplete)="onCustomization($event)" 
+                 [blockoutSettings.enable]=blockenable
+                 [blockoutSettings.dataSource]=blockData
+                 blockoutSettings.id="Id"
+                 blockoutSettings.subject="Subject"
+                 blockoutSettings.startTime="StartTime"
+                 blockoutSettings.endTime="EndTime"
+                 blockoutSettings.isBlockAppointment="BlockAppointment"
+                 blockoutSettings.resourceId="ResourceId"
+                 blockoutSettings.isAllDay="FullDay" 
+                 [appointmentSettings.dataSource]=scheduleData 
+                 appointmentSettings.id="Id"
+                 appointmentSettings.subject="Subject" 
+                 appointmentSettings.startTime="StartTime" 
+                 appointmentSettings.endTime="EndTime"
+                 appointmentSettings.allDay="AllDay"
+                 appointmentSettings.recurrence="Recurrence"
+                 appointmentSettings.recurrenceRule="RecurrenceRule"
+                 appointmentSettings.resourceFields="OwnerId"
+                 [group]=group >
+        <e-resources>
+            <e-resource field="OwnerId" title="Owner" name="Owners" [allowMultiple]=allowMultiple [resourceSettings]=resourceData></e-resource>
+        </e-resources>
+    </ej-schedule>
+</ion-content>
