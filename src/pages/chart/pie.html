@@ -1,0 +1,8 @@
+<header-title title="Chart  /  Pie"></header-title>
+<ion-content>
+    <ej-chart id="pie_Ionic"  style="display:block;" [isResponsive]="true" [legend]="legend" [title]="title" [commonSeriesOptions]="commonSeriesOptions" (load)="onchartload($event)">
+        <e-seriescollection>
+            <e-series name="Gold" [dataSource]="CountriesList" xName="xName" yName="yName"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
