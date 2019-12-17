@@ -1,0 +1,9 @@
+<header-title title="Chart  /  Bar"></header-title>
+<ion-content>
+    <ej-chart id="bar_Ionic" style="display:block;" [title]="title" [legend]="legend" [isResponsive]="true" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [commonSeriesOptions]="commonSeriesOptions" (load)="onchartload($event)">
+        <e-seriescollection>
+            <e-series name="India" [dataSource]="UnemploymentList" xName="xName" yName="yName"></e-series>
+            <e-series name="US" [dataSource]="UnemploymentList" xName="xName" yName="yName1"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
