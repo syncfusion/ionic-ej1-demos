@@ -1,0 +1,50 @@
+<header-title title="SparkLine"></header-title>
+<ion-content padding>
+    <div style="padding-top:30px;">
+        <table style="width:100%;">
+            <tr>
+                <td align="center" style="vertical-align:middle;font-style:italic !important">Mean Working Hours for year</td>
+                <td>
+                    <ej-sparkline id="line" [dataSource]="ldata" [tooltip]="tool" [size.height]="lheight" [size.width]="lwidth"></ej-sparkline>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="vertical-align:middle;font-style:italic !important">Revenue Status</td>
+                <td>
+                    <ej-sparkline id="column" [type]="ctype" [tooltip]="tool" [dataSource]="cdata" [negativePointColor]="negativeColor" [highPointColor]="highColor" [size.height]="cheight" [size.width]="cwidth"></ej-sparkline>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="vertical-align:middle;font-style:italic !important">Project Status Tracing</td>
+                <td>
+                    <ej-sparkline id="area" [type]="atype" [tooltip]="tool" [markerSettings.visible]=true [dataSource]="adata" [highPointColor]="highColor" [lowPointColor]="orange" [size.height]="cheight" [size.width]="cwidth"></ej-sparkline>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="vertical-align:middle;font-style:italic !important">Profit Comparison for each months</td>
+                <td>
+                    <ej-sparkline id="winloss" [type]="wtype" [dataSource]="wdata" [size.height]="cheight" [size.width]="cwidth"></ej-sparkline>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="vertical-align:middle;font-style:italic !important">Expenditure for a year</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><ej-sparkline id="pie1" [type]="ptype" [tooltip]="tool" [dataSource]="pdata1" [size.height]="pheight" [size.width]="pwidth"></ej-sparkline></td>
+                            <td><ej-sparkline id="pie2" [type]="ptype" [tooltip]="tool" [dataSource]="pdata2" [size.height]="pheight" [size.width]="pwidth"></ej-sparkline></td>
+                            <td><ej-sparkline id="pie3" [type]="ptype" [tooltip]="tool" [dataSource]="pdata3" [size.height]="pheight" [size.width]="pwidth"></ej-sparkline></td>
+                            <td><ej-sparkline id="pie4" [type]="ptype" [tooltip]="tool" [dataSource]="pdata4" [size.height]="pheight" [size.width]="pwidth"></ej-sparkline></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Q1</td>
+                            <td align="center">Q2</td>
+                            <td align="center">Q3</td>
+                            <td align="center">Q4</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</ion-content>
