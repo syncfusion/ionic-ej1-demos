@@ -1,0 +1,232 @@
+
+
+@font-face {
+    font-family: 'Syncfusion';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj8gSwsAAAEoAAAAVmNtYXDpEOlVAAABiAAAADZnbHlm7a3Z7gAAAcgAAAB8aGVhZAn0MWEAAADQAAAANmhoZWEHmQNrAAAArAAAACRobXR4B+gAAAAAAYAAAAAIbG9jYQA+AAAAAAHAAAAABm1heHABFQAwAAABCAAAACBuYW1lJ9B+qgAAAkQAAAJJcG9zdL6CalMAAASQAAAAOQABAAADUv9qAFoEAAAA//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAd6Q/e18PPPUACwPoAAAAANN19lEAAAAA03X2UQAAAAAD6gPaAAAACAACAAAAAAAAAAEAAAACACQACQAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA6QDpAANS/2oAWgPaAJYAAAABAAAAAAAABAAAAAPoAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA6QD//wAA6QD//wAAAAEABAAAAAEAAAAAAAAAPgAAAAkAAAAAA+oD2gADAAcACwAPABMAFwAbAB8AIwAAJTM1IwUzNSMFMzUjJTM1IwUzNSMFMzUjJTM1IwUzNSMFFzcnAlH39/7Y+Pj+2vf3Ak34+P7Z9/f+2fj4ASf39/7Z+PgChcCjwBP39/f39y/4+Pj4+C/4+Pg+o8CjAAAAABIA3gABAAAAAAAAAAEAAAABAAAAAAABAAoAAQABAAAAAAACAAcACwABAAAAAAADAAoAEgABAAAAAAAEAAoAHAABAAAAAAAFAAsAJgABAAAAAAAGAAoAMQABAAAAAAAKACwAOwABAAAAAAALABIAZwADAAEECQAAAAIAeQADAAEECQABABQAewADAAEECQACAA4AjwADAAEECQADABQAnQADAAEECQAEABQAsQADAAEECQAFABYAxQADAAEECQAGABQA2wADAAEECQAKAFgA7wADAAEECQALACQBRyBTeW5jZnVzaW9uUmVndWxhclN5bmNmdXNpb25TeW5jZnVzaW9uVmVyc2lvbiAxLjBTeW5jZnVzaW9uRm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABTAHkAbgBjAGYAdQBzAGkAbwBuAFIAZQBnAHUAbABhAHIAUwB5AG4AYwBmAHUAcwBpAG8AbgBTAHkAbgBjAGYAdQBzAGkAbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABTAHkAbgBjAGYAdQBzAGkAbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAHUAcwBpAG4AZwAgAFMAeQBuAGMAZgB1AHMAaQBvAG4AIABNAGUAdAByAG8AIABTAHQAdQBkAGkAbwB3AHcAdwAuAHMAeQBuAGMAZgB1AHMAaQBvAG4ALgBjAG8AbQAAAAACAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAgEDAA9lLWljb24tc3luY2xvZ28AAAAAAA==) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="e-iconlogo"], [class*=" e-iconlogo"] {
+    font-family: 'Syncfusion' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.e-iconlogo-synclogo:before {
+    content: "\e900";
+    font-size: 23px;
+}
+
+
+@font-face {
+    font-family: 'syncionic';
+    src:    url('fonts/syncionic.eot?r0fwce');
+    src:    url('fonts/syncionic.eot?r0fwce#iefix') format('embedded-opentype'),
+        url('fonts/syncionic.ttf?r0fwce') format('truetype'),        
+        url('fonts/syncionic.woff?r0fwce') format('woff'),
+        url('fonts/syncionic.woff') format('woff'),
+        url('fonts/syncionic.svg?r0fwce#syncionic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ion-sync-"], [class*=" ion-sync-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'syncionic' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    padding-right:10px;
+    font-size: 23px;
+    position:relative;
+    top:4px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-sync-accordion:before {
+    content: "\e900";
+}
+.ion-sync-autocomplete:before {
+    content: "\e901";
+}
+.ion-sync-barcode:before {
+    content: "\e902";
+}
+.ion-sync-bulletgraph:before {
+    content: "\e903";
+}
+.ion-sync-button:before {
+    content: "\e904";
+}
+.ion-sync-chart:before {
+    content: "\e905";
+}
+.ion-sync-circulargauge:before {
+    content: "\e906";
+}
+.ion-sync-datepicker:before {
+    content: "\e935";
+}
+.ion-sync-datetimepicker:before {
+    content: "\e908";
+}
+.ion-sync-diagram:before {
+    content: "\e909";
+}
+.ion-sync-dialog:before {
+    content: "\e90a";
+}
+.ion-sync-digitalgauge:before {
+    content: "\e90b";
+}
+.ion-sync-dropdownlist:before {
+    content: "\e90c";
+}
+.ion-sync-fileexplorer:before {
+    content: "\e90d";
+}
+.ion-sync-grid:before {
+    content: "\e90e";
+}
+.ion-sync-kanbanboard:before {
+    content: "\e90f";
+}
+.ion-sync-lineargauge:before {
+    content: "\e910";
+}
+.ion-sync-listview:before {
+    content: "\e911";
+}
+.ion-sync-listbox:before {
+    content: "\e912";
+}
+.ion-sync-maps:before {
+    content: "\e913";
+}
+.ion-sync-menu:before {
+    content: "\e914";
+}
+.ion-sync-navigationdrawer:before {
+    content: "\e915";
+}
+.ion-sync-pdfviewer:before {
+    content: "\e916";
+}
+.ion-sync-pivotchart:before {
+    content: "\e917";
+}
+.ion-sync-pivotgauge:before {
+    content: "\e918";
+}
+.ion-sync-pivotgrid:before {
+    content: "\e919";
+}
+.ion-sync-progressbar:before {
+    content: "\e91a";
+}
+.ion-sync-radialmenu:before {
+    content: "\e91b";
+}
+.ion-sync-radialslider:before {
+    content: "\e91c";
+}
+.ion-sync-rangenavigator:before {
+    content: "\e91d";
+}
+.ion-sync-rating:before {
+    content: "\e91e";
+}
+.ion-sync-reportviewer:before {
+    content: "\e91f";
+}
+.ion-sync-ribbon:before {
+    content: "\e920";
+}
+.ion-sync-rotator:before {
+    content: "\e921";
+}
+.ion-sync-rte:before {
+    content: "\e922";
+}
+.ion-sync-schedule:before {
+    content: "\e923";
+}
+.ion-sync-scrollbar:before {
+    content: "\e924";
+}
+.ion-sync-slider:before {
+    content: "\e925";
+}
+.ion-sync-sparkline:before {
+    content: "\e926";
+}
+.ion-sync-splitter:before {
+    content: "\e927";
+}
+.ion-sync-tab:before {
+    content: "\e928";
+}
+.ion-sync-tagcloud:before {
+    content: "\e929";
+}
+.ion-sync-textboxes:before {
+    content: "\e92a";
+}
+.ion-sync-tileview:before {
+    content: "\e92b";
+}
+.ion-sync-timepicker:before {
+    content: "\e92c";
+}
+.ion-sync-toolbar:before {
+    content: "\e92d";
+}
+.ion-sync-tooltip:before {
+    content: "\e92e";
+}
+.ion-sync-treegrid:before {
+    content: "\e92f";
+}
+.ion-sync-treemap:before {
+    content: "\e930";
+}
+.ion-sync-treeview:before {
+    content: "\e931";
+}
+.ion-sync-uploadbox:before {
+    content: "\e932";
+}
+.ion-sync-colorpicker:before {
+    content: "\e933";
+}
+.ion-sync-spreadsheet:before {
+    content: "\e934";
+}
+.ion-sync-heatmap:before {
+  content: "\e936";
+}
+.ion-sync-waitingpopup:before {
+  content: "\e937";
+}
+.ion-sync-pivottreemap:before {
+  content: "\e938";
+}
+a.tab-button{
+    min-width: 190px !important;
+}
+.scroll-content{
+    overflow-y: auto !important;
+}

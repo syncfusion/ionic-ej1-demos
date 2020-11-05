@@ -1,0 +1,36 @@
+<header-title title="HeatMap  /  Legend  "></header-title>
+<ion-content padding>
+    <div style="border-width: 2px; opacity: 0.7; text-align: center;">
+        <label class="ht-label1">Product Sales by Year</label><br />
+        <label class="ht-label2">(In Percentage)</label>
+    </div>
+      <div style="height: 15px; width: 100%;"></div>
+    <div style="margin: 0 auto; text-align: center;width: 94%;">
+        <ej-heatmap id="legend_heatmap1" isResponsive="true" width="100%" [itemsMapping]="itemsMapping" [itemsSource]="itemsSource" [legendCollection]="legendCollection">
+            <e-colormappingcollection>
+                <e-colormapping [value]="0" color="#fe0002" [label]="label">
+                </e-colormapping>
+                <e-colormapping [value]="3" color="#ffff01" [label]="label">
+                </e-colormapping>
+                <e-colormapping [value]="6" color="#13ab11" [label]="label">
+                </e-colormapping>
+                <e-colormapping [value]="10" color="#005ba2" [label]="label">
+                </e-colormapping>
+            </e-colormappingcollection>
+        </ej-heatmap>
+        <div style="height: 15px; width: 100%;"></div>
+        <ej-heatmaplegend id="legend_heatmaplegend" isResponsive="true" style="margin:auto;" [legendMode]="legendMode" height="50px" width="75%">
+            <e-legendcolormappings>
+                <e-legendcolormapping [value]="0" color="#fe0002">
+                </e-legendcolormapping>
+                <e-legendcolormapping [value]="3" color="#ffff01">
+                </e-legendcolormapping>
+                <e-legendcolormapping [value]="6" color="#13ab11">
+                </e-legendcolormapping>
+                <e-legendcolormapping [value]="10" color="#005ba2">
+                </e-legendcolormapping>
+            </e-legendcolormappings>
+        </ej-heatmaplegend>
+    </div>
+
+</ion-content>
