@@ -1,0 +1,8 @@
+<header-title title="Chart  /  Doughnut"></header-title>
+<ion-content>
+    <ej-chart  id="dougnut_Ionic"  style="display:block;" [title]="title" [legend]="legend" [isResponsive]="true" [commonSeriesOptions]="commonSeriesOptions" (load)="onchartload($event)">
+        <e-seriescollection>
+            <e-series name="India" [dataSource]="points" xName="x" yName="y"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
