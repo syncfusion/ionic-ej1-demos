@@ -1,0 +1,12 @@
+<header-title title="Grid"></header-title>
+<ion-content padding>
+    <ej-grid [dataSource]="gridData" [allowPaging]="true" [isResponsive]="true">
+        <e-columns>
+            <e-column field="OrderID" headerText="Order ID" width="22%"></e-column>
+            <e-column field="CustomerID" headerText="Client ID" width="22%"></e-column>
+            <e-column field="Freight" width="19%" format="{0:C}"></e-column>
+            <e-column field="OrderDate" headerText="Date" format="{0:MM/dd/yy}" width="21%"></e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="32%"></e-column>
+        </e-columns>
+    </ej-grid>
+</ion-content>
