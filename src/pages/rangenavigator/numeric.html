@@ -1,0 +1,11 @@
+<header-title title="Range Navigator  /  Numeric"></header-title>
+<ion-content padding>
+    <ej-rangenavigator id="numericrange" style="display:block;" align="center" [tooltipSettings]="rntooltip" enableDefferedUpdate="true" padding="15" (load)="onrnload($event)" (rangeChanged)="onchartloaded($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" [allowSnapping]="true" selectedRangeSettings.start="100" padding="15" selectedRangeSettings.end="250" valueType="numeric" [isResponsive]="true" sizeSettings.height="120">
+    </ej-rangenavigator>
+    <ej-chart id="numericChart" style="display:block;" [crosshair]="crosshair" [isResponsive]="true" [primaryXAxis]="primaryX" [primaryYAxis]="primaryY" [commonSeriesOptions]="commonSeries" (load)="onchartload($event)">
+        <e-seriescollection>
+            <e-series name="Product X" [dataSource]="openData" xName="XValue" yName="YValue"></e-series>
+            <e-series name="Product Y" [dataSource]="closeData" xName="XValue" yName="YValue"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
