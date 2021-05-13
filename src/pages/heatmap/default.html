@@ -1,0 +1,27 @@
+<header-title title="HeatMap"></header-title>
+<ion-content padding>
+   <div style="border-width: 2px; opacity: 0.7; text-align: center;">
+            <label class="ht-label1">Product Sales by Year</label><br />
+            <label class="ht-label2">(In Percentage)</label>
+        </div>
+        <div style="height: 15px; width: 100%;"></div>
+     <div style="margin: 0 auto; text-align: center;width: 94%;">   
+        <ej-heatmap id="heatmap" [isResponsive]="isResponsive" width="100%" [itemsMapping]="itemsMapping" [itemsSource]="itemsSource">
+            <e-colormappingcollection>
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
+                </e-colormapping>
+                <e-colormapping [value]="100" color="#0d47a1" [label]="label">
+                </e-colormapping>
+            </e-colormappingcollection>
+        </ej-heatmap>  
+     <div style="height: 15px; width: 100%;"></div>      
+        <ej-heatmaplegend id="heatmaplegend" height="50px" width="100%">
+            <e-legendcolormappings>
+                <e-legendcolormapping [value]="0" color="#8ec8f8">
+                </e-legendcolormapping>
+                <e-legendcolormapping [value]="100" color="#0d47a1">
+                </e-legendcolormapping>
+            </e-legendcolormappings>
+        </ej-heatmaplegend> 
+    </div>
+</ion-content>
