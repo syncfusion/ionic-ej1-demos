@@ -1,0 +1,11 @@
+<header-title title="Grid  /  Sorting"></header-title>
+<ion-content padding>
+    <ej-grid [dataSource]="gridData" [allowSorting]="true" [allowMultiSorting]="true" [allowPaging]="true" [isResponsive]="true">
+        <e-columns>
+            <e-column field="OrderID" headerText="Order ID" width="13%"></e-column>
+            <e-column field="Freight" width="12%" format="{0:C}"></e-column>
+            <e-column field="OrderDate" headerText="Date" format="{0:MM/dd/yy}" width="10%"></e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="15%"></e-column>
+        </e-columns>
+    </ej-grid>
+</ion-content>

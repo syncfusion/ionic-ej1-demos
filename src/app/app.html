@@ -1,0 +1,23 @@
+<ion-split-pane when="lg">
+    <ion-menu [content]="content">
+        <ion-header>
+            <ion-toolbar id="left-header">
+                <ion-title class="e-iconlogo-synclogo">
+                    Essential JS 1 for Ionic
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ej-accordion class="control-list" [collapsible]="true" *ngFor="let p of pages" id="{{ 'accordion-' + p.id }}" customIcon.header="arrowRight" customIcon.selectedHeader="arrowDown">
+                <h3>
+                    {{p.control}}
+                </h3>
+                <div>
+                    <ej-listview [persistSelection]="true" (mouseUp)="openPage(p)" id="{{ 'list-' + p.id }}"><ul><li *ngFor="let s of p.samples;">{{s}}</li></ul></ej-listview>
+                </div>
+            </ej-accordion>
+        </ion-content>
+    </ion-menu>
+    <ion-nav [root]="rootPage" #content main swipeBackEnabled="false">
+    </ion-nav>
+</ion-split-pane>
