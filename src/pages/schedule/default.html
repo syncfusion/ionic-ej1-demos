@@ -1,0 +1,19 @@
+<header-title title="Schedule"></header-title>
+<ion-content>
+    <ej-schedule width="100%"
+                 height="530px"
+                 currentView="week"
+                 isResponsive="true"
+                 (create)="onCustomization($event)"
+                 (actionComplete)="onCustomization($event)" 
+                 [currentDate]=currentdate 
+                 [appointmentSettings.dataSource]=scheduleData 
+                 appointmentSettings.id="Id"
+                 appointmentSettings.subject="Subject" 
+                 appointmentSettings.startTime="StartTime" 
+                 appointmentSettings.endTime="EndTime"
+                 appointmentSettings.allDay="AllDay"
+                 appointmentSettings.recurrence="Recurrence"
+                 appointmentSettings.recurrenceRule="RecurrenceRule" >
+    </ej-schedule>
+</ion-content>
