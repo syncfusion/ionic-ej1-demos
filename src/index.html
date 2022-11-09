@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Essential JS 1 | Ionic Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+	<meta name="description" content="The sample browser is built by Syncfusion Essential JS 1 web components to visualize progressive web in an Ionic application with the help of Angular." />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link href="assets/ej/style.css" rel="stylesheet">
+    <link href="assets/ej/material/ej.web.all.min.css" rel="stylesheet">
+    <link href="assets/ej/responsive-css/ej.responsive.css" rel="stylesheet">
+    <script src="//l2.io/ip.js?var=window.myip"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4e8ef7">
+
+  <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.error('Error', err));
+      }
+    </script>-->
+  <link href="build/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Ionic's root component and where the app will load -->
+  <h1 style="color: transparent;">Essential JS 1 | Ionic Application</h1>
+  <ion-app>
+    <div class="splash">
+      <div class="message">ejIonic App</div>
+      <div class="loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>  
+    </div>
+  </ion-app>
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+<!-- The vendor js is generated during the build process -->
+  <script src="build/vendor.js"></script>
+  <!-- The bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+</body>
+
+</html>

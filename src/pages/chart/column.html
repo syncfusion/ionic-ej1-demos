@@ -1,0 +1,10 @@
+<header-title title="Chart  /  Column"></header-title>
+<ion-content>
+    <ej-chart id="column_Ionic"  style="display:block;" [isResponsive]="true" [legend]="legend" [title]="title" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [commonSeriesOptions]="commonSeriesOptions" (load)="onchartload($event)">
+        <e-seriescollection>
+            <e-series name="Gold" [dataSource]="CountriesList" xName="xName" yName="yName"></e-series>
+            <e-series name="Silver" [dataSource]="CountriesList" xName="xName" yName="yName1"></e-series>
+            <e-series name="Bronze" [dataSource]="CountriesList" xName="xName" yName="yName2"></e-series>
+        </e-seriescollection>
+    </ej-chart>
+</ion-content>
