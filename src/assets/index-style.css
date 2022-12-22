@@ -1,0 +1,194 @@
+
+     body{
+         margin: 0px;
+         overflow-x: hidden;
+     }
+     #emulatorContent.ios,#emulatorContent.android, #emulatorContent.windows{
+         
+    width: 467px;
+    height: 870px;
+    background: center top no-repeat url(img/devices-sprite.png);
+    background-size: 470px;
+    margin: 0 auto;
+    position: relative;
+}
+#emulatorContent.android{
+    height: 847px !important;
+}
+#emulatorContent.ios{
+        background-position: center top;
+}
+#emulatorContent.windows{
+    background-position: center bottom;
+}
+#emulatorContent.android{
+        background-position: center center;
+}
+.platform-preview .platform-toggle a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    transition: .2s color, .2s background-color;
+}
+ .platform-preview .platform-toggle a.active, .platform-preview .platform-toggle a:active {
+    background-color: #0c60ee;
+    color: #fff;
+ }
+ .platform-preview .platform-toggle a:hover {
+    background-color: #f5f5f5;
+    color: #06c0ee;
+ }
+.ios #samplefile{
+    width: 350px;
+    height: 619px;
+    top: 155px;
+    left: 61px;
+    position: absolute;
+}
+.android #samplefile{
+        width: 359px;
+    left: 57px;
+    top: 122px;
+    height: 590px;
+    position: absolute;
+}
+.windows #samplefile{
+        width: 356px;
+    left: 57px;
+    top: 126px;
+    height: 582px;
+    position: absolute;
+}
+.mobileframe{
+    height: 50px;
+    width: 100%;
+    border-color: #0c60ee;
+    background-color: #0c60ee;
+    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding: 12px 0 0 17px;
+    position: relative;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+}
+.switchbtns{
+    height: 40px;
+    left: 41%;
+    position: relative;
+    padding-top: 19px;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    margin-bottom: -26px;
+}
+.winHead{
+    top: 94px;
+}
+
+@font-face {
+    font-family: 'Syncfusion';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj8gSwsAAAEoAAAAVmNtYXDpEOlVAAABiAAAADZnbHlm7a3Z7gAAAcgAAAB8aGVhZAn0MWEAAADQAAAANmhoZWEHmQNrAAAArAAAACRobXR4B+gAAAAAAYAAAAAIbG9jYQA+AAAAAAHAAAAABm1heHABFQAwAAABCAAAACBuYW1lJ9B+qgAAAkQAAAJJcG9zdL6CalMAAASQAAAAOQABAAADUv9qAFoEAAAA//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAd6Q/e18PPPUACwPoAAAAANN19lEAAAAA03X2UQAAAAAD6gPaAAAACAACAAAAAAAAAAEAAAACACQACQAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA6QDpAANS/2oAWgPaAJYAAAABAAAAAAAABAAAAAPoAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA6QD//wAA6QD//wAAAAEABAAAAAEAAAAAAAAAPgAAAAkAAAAAA+oD2gADAAcACwAPABMAFwAbAB8AIwAAJTM1IwUzNSMFMzUjJTM1IwUzNSMFMzUjJTM1IwUzNSMFFzcnAlH39/7Y+Pj+2vf3Ak34+P7Z9/f+2fj4ASf39/7Z+PgChcCjwBP39/f39y/4+Pj4+C/4+Pg+o8CjAAAAABIA3gABAAAAAAAAAAEAAAABAAAAAAABAAoAAQABAAAAAAACAAcACwABAAAAAAADAAoAEgABAAAAAAAEAAoAHAABAAAAAAAFAAsAJgABAAAAAAAGAAoAMQABAAAAAAAKACwAOwABAAAAAAALABIAZwADAAEECQAAAAIAeQADAAEECQABABQAewADAAEECQACAA4AjwADAAEECQADABQAnQADAAEECQAEABQAsQADAAEECQAFABYAxQADAAEECQAGABQA2wADAAEECQAKAFgA7wADAAEECQALACQBRyBTeW5jZnVzaW9uUmVndWxhclN5bmNmdXNpb25TeW5jZnVzaW9uVmVyc2lvbiAxLjBTeW5jZnVzaW9uRm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABTAHkAbgBjAGYAdQBzAGkAbwBuAFIAZQBnAHUAbABhAHIAUwB5AG4AYwBmAHUAcwBpAG8AbgBTAHkAbgBjAGYAdQBzAGkAbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABTAHkAbgBjAGYAdQBzAGkAbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAHUAcwBpAG4AZwAgAFMAeQBuAGMAZgB1AHMAaQBvAG4AIABNAGUAdAByAG8AIABTAHQAdQBkAGkAbwB3AHcAdwAuAHMAeQBuAGMAZgB1AHMAaQBvAG4ALgBjAG8AbQAAAAACAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAgEDAA9lLWljb24tc3luY2xvZ28AAAAAAA==) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="e-iconlogo"], [class*=" e-iconlogo"] {
+    display: inline;
+    font-family: 'Syncfusion' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#qrbutton {
+    float: right;
+    margin-top: 1px;
+    margin-right: 29px;
+    display: block;
+    background-image: url(img/qrcode_select.png);
+    background-repeat: no-repeat;
+    background-size: 33px auto;
+    height: 37px;
+    width: 37px;
+    border-radius: 0;
+    background-position: 1px center;
+    opacity: 1;  
+}
+.e-iconlogo-synclogo:before {
+    content: "\e900";
+    font-size: 27px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px;
+    height: 300px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.syncqrcode{
+    padding: 0% 6%;
+    height: 75%;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 650px){
+.switchbtns{
+    left: 35%;
+}
+}
+@media only screen and (max-width: 1150px){
+.switchbtns{
+    left: 40%;
+}
+}
+@media only screen and (max-width: 970px){
+.switchbtns{
+    left: 38%;
+}
+}
+@media only screen and (max-width: 880px){
+.switchbtns{
+    left: 40%;
+}
+}
+
+@media only screen and (max-width: 329px){
+#qrbutton {
+    display: none;
+}
+}
